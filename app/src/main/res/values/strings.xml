@@ -4,4 +4,6 @@
     <!-- Splash screen activity -->
     <string name="splash_slogan">Because the food matters</string>
 
+    <string name="title_activity_kebab_settings">KebabSettingsActivity</string>
+
 </resources>
