@@ -10,6 +10,9 @@ import android.widget.Button;
 import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
 public class KebabSettingsActivity extends AppCompatActivity {
+    private BestKebebFinder finder = new BestKebebFinder();
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,16 +36,22 @@ public class KebabSettingsActivity extends AppCompatActivity {
     }
 
     private void orderBigKebab() {
-        goToNavigation(false);
+
+        goToNavigation(finder.findBestKebab(Size.medium));
     }
 
     private void orderVeryBigKebab() {
-        goToNavigation(true);
+
+        KebabPlace place = finder.findBestKebab(Size.big);
+        goToNavigation(place);
     }
 
-    private void goToNavigation(boolean isVeryBig){
-        Intent intent = new Intent(this, MainActivity.class);
-        intent.putExtra(EXTRA_MESSAGE, isVeryBig);
+    private void goToNavigation(KebabPlace kebab){
+        Bundle bundle = new Bundle();
+        bundle.putSerializable(KebabPlace.alias, kebab);
+        //bundle.putFloat("a", 1.5f);
+        Intent intent = new Intent(KebabSettingsActivity.this, MapsActivity.class);
+        intent.putExtras(bundle);
         startActivity(intent);
     }
 }
