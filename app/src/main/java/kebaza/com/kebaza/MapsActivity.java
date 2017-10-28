@@ -1,5 +1,6 @@
 package kebaza.com.kebaza;
 
+import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 
@@ -13,6 +14,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+    private KebabPlace kebabPlace;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+        Bundle bundle = getIntent().getExtras();
+        kebabPlace = (KebabPlace) bundle.get(KebabPlace.alias);
     }
 
 
@@ -40,10 +45,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        final LatLng tanti = new LatLng(50.0756986,19.907227);
-        mMap.addMarker(new MarkerOptions().position(tanti).title("Tanti Kebab"));
+        LatLng location = new LatLng(kebabPlace.latitude, kebabPlace.longitude);
+        mMap.addMarker(new MarkerOptions().position(location).title(kebabPlace.name));
 
         //mMap.moveCamera(CameraUpdateFactory.newLatLng(tanti));
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(tanti,16));
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(location,16));
     }
 }
