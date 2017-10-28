@@ -1,0 +1,9 @@
+0000000000000000000000000000000000000000 0e6088a3c13343ca1631c998b7de9e0dab8377c5 rzeznikm <ironmichal92@gmail.com> 1509186619 +0200	clone: from https://github.com/dniziolek/hackyeah.git
+0e6088a3c13343ca1631c998b7de9e0dab8377c5 81a667bc6ed748b9dbaafa98f729ac1a2659ca90 rzeznikm <ironmichal92@gmail.com> 1509196101 +0200	commit: Project init
+81a667bc6ed748b9dbaafa98f729ac1a2659ca90 eb61b4b4eb5ca181b9b516da3be2595b6531eb1f Dominika Niziolek <dominikaniziolek@213-17-157-195.static.ip.netia.com.pl> 1509215698 +0200	commit: deleting build files
+eb61b4b4eb5ca181b9b516da3be2595b6531eb1f c6bc50413c40af70b4e9a35df536820db28ae8f3 Dominika Niziolek <dominikaniziolek@213-17-157-195.static.ip.netia.com.pl> 1509215735 +0200	commit: deleting build files
+c6bc50413c40af70b4e9a35df536820db28ae8f3 2db1402ece68eabb542badf608682ba2b6ed66a9 Dominika Niziolek <dominikaniziolek@213-17-157-195.static.ip.netia.com.pl> 1509215741 +0200	pull: Merge made by the 'recursive' strategy.
+2db1402ece68eabb542badf608682ba2b6ed66a9 2db1402ece68eabb542badf608682ba2b6ed66a9 Dominika Niziolek <dominikaniziolek@213-17-157-195.static.ip.netia.com.pl> 1509218522 +0200	checkout: moving from master to fujfuj
+2db1402ece68eabb542badf608682ba2b6ed66a9 47075b30a6828d8b9a4531f8a1f80b9483903046 Dominika Niziolek <dominikaniziolek@213-17-157-195.static.ip.netia.com.pl> 1509218554 +0200	commit: new logo and the beginning of sober test
+47075b30a6828d8b9a4531f8a1f80b9483903046 2db1402ece68eabb542badf608682ba2b6ed66a9 Dominika Niziolek <dominikaniziolek@213-17-157-195.static.ip.netia.com.pl> 1509220222 +0200	checkout: moving from fujfuj to master
+2db1402ece68eabb542badf608682ba2b6ed66a9 47075b30a6828d8b9a4531f8a1f80b9483903046 Dominika Niziolek <dominikaniziolek@213-17-157-195.static.ip.netia.com.pl> 1509220233 +0200	merge fujfuj: Fast-forward
