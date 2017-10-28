@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--animation params-->
+    <integer name="splash_logo_translate_duration">1500</integer>
+    <integer name="splash_logo_alpha_duration">2000</integer>
+
+    <integer name="splash_slogan_start_alpha_after">2000</integer>
+    <integer name="splash_slogan_alpha_duration">800</integer>
+
+    <integer name="splash_finish_after">4300</integer>
+
+</resources>
